@@ -1,7 +1,9 @@
 var utils = require("./utils.js");
 exports.factory = function (express, db, collection, options) {
     var _collection = collection;
-    var _db = db.createDB();
+    var _db = db.createCollection(_collection);
+
+
     if (options.unique) {
         _collection = options.unique;
     }
@@ -23,7 +25,7 @@ exports.factory = function (express, db, collection, options) {
         });
     });
     express.put("/api/" + _collection + "/:id", function (req, res) {
-        _db.update({_id:req.params.id}, {$set:u.cleanObject(req.body)}).then(function (result) {
+        _db.update({_id:req.params.id}, {$set:utils.cleanObject(req.body)}).then(function (result) {
             res.json(200, result);
         });
         ;

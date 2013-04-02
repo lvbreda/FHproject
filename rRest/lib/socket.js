@@ -1,11 +1,11 @@
 var utils = require("./utils.js");
 exports.factory = function (express, sockets, db, collection, options) {
     var _collection = collection;
-    var _db = db.createDB();
+    var _db = db.createCollection(_collection);
     if (options.unique) {
         _collection = options.unique;
     }
-    io.of('/' + _collection)
+    sockets.of('/' + _collection)
         .on('connection', function (socket) {
             socket.on('get', function (id, query) {
                 _db.find(query, options.fields).then(function (result) {
@@ -18,7 +18,7 @@ exports.factory = function (express, sockets, db, collection, options) {
                 });
             });
             socket.on('update', function (id, _uniqueId, values) {
-                _db.update({_id:_uniqueId}, {$set:u.cleanObject(values)}).then(function (result) {
+                _db.update({_id:_uniqueId}, {$set:utils.cleanObject(values)}).then(function (result) {
                     socket.emit(id, result);
                 });
             });

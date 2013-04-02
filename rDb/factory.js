@@ -7,21 +7,21 @@
  }
  */
 var _connection;
-var _callback;
+var _callback = function (name, result) {
+    _communicator.fireListeners(name, result);
+};
+var db;
 var _communicator = require("../rCom/main.js");
-exports.init = function (connection, callback) {
+exports.init = function (connection) {
     _connection = connection;
-    _callback = callback;
-
 }
 exports.connection = _connection;
 exports.communicator = _communicator;
-exports.createDB = function (connection, callback) {
-    _connection = connection ? connection : _connection;
-    _callback = callback ? callback : _callback;
 
+exports.createDB = function (connection) {
+    _connection = connection ? connection : _connection;
     var self = this;
-    var db = require('lib/' + _connection.type);
+    db = require('./lib/' + _connection.type);
     db.setup(_connection.details);
 
     if (_connection.reactive) {
@@ -29,3 +29,4 @@ exports.createDB = function (connection, callback) {
     }
     return db;
 }
+
