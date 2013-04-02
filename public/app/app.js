@@ -5,7 +5,7 @@
  * Time: 13:39
  * To change this template use File | Settings | File Templates.
  */
-var app = angular.module('rLive', []).
+var app = angular.module('rLive', ['rAngular']).
     config(function ($routeProvider) {
         $routeProvider.
             when('/', {controller:"HomeCtrl", templateUrl:'views/home.html'}).
