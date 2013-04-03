@@ -1,7 +1,10 @@
 var utils = require("./utils.js");
+var _ = require("underscore");
 exports.factory = function (express, sockets, db, collection, options) {
     var _collection = collection;
     var _db = db.createCollection(_collection);
+    var self = this;
+    self.queries = [];
     if (options.unique) {
         _collection = options.unique;
     }
@@ -27,8 +30,14 @@ exports.factory = function (express, sockets, db, collection, options) {
                     socket.emit(id, result);
                 });
             });
-            _db.communicator.registerListener(_collection, function (name, result) {
-                socket.emit(name, _collection, result);
+
+            _db.communicator.registerListener(_collection, function (name, obj) {
+                socket.emit(name, _collection, obj);
             });
+            console.log(_db.communicator);
         });
+    self.addQuery = function (query) {
+        self.queries.push(query);
+    }
+
 }

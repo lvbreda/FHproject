@@ -2,7 +2,7 @@ var utils = require("./utils.js");
 exports.factory = function (express, db, collection, options) {
     var _collection = collection;
     var _db = db.createCollection(_collection);
-
+    var socketserver = options.socketserver;
 
     if (options.unique) {
         _collection = options.unique;

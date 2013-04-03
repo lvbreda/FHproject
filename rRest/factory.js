@@ -17,10 +17,16 @@ app.configure(function () {
 var server = app.listen(3000);
 var io = require('socket.io').listen(server);
 exports.factory = function (db, collection, realtime, options) {
-    restServers.push(restFactory.factory(app, db, collection, options));
+    var socketserver;
+    options = options || {};
     if (realtime) {
+        socketserver = socketFactory.factory(app, io, db, collection, options);
         socketServers.push(socketFactory.factory(app, io, db, collection, options));
+        options.socketserver = socketserver;
     }
+
+    var restserver = restFactory.factory(app, db, collection, options);
+    restServers.push(restserver);
 }
 exports.app = app;
 

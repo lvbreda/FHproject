@@ -4,7 +4,7 @@ var BSON = mongo.BSONPure;
 var q = require('q');
 var db;
 var oplog;
-
+var _communicator = require("../../rCom/main.js");
 
 /**Collection **/
 
@@ -15,6 +15,7 @@ var Collection = function (name) {
         if (query._id) query._id = new BSON.ObjectID(query._id);
         db.collection(name).find(query, options).toArray(function (err, result) {
             if (err) console.log("Error", err);
+
             deferred.resolve(result);
         });
         return deferred.promise;
@@ -33,6 +34,11 @@ var Collection = function (name) {
         if (query._id) query._id = new BSON.ObjectID(query._id);
         db.collection(name).remove(query, options, function (err, result) {
             if (err) console.log("Error", err);
+            self.communicator.fireListeners(name, {
+                "action":"remove",
+                "query":query,
+                "options":options
+            });
             deferred.resolve(result);
         });
         return deferred.promise;
@@ -43,6 +49,11 @@ var Collection = function (name) {
         db.collection(name).update(query, options, function (err, result) {
             if (err) console.log("Error", err);
             deferred.resolve(result);
+            self.communicator.fireListeners(name, {
+                "action":"update",
+                "query":query,
+                "options":options
+            });
         });
         return deferred.promise;
     }
@@ -51,9 +62,15 @@ var Collection = function (name) {
         db.collection(name).insert(query, options, function (err, result) {
             if (err) console.log("Error", err);
             deferred.resolve(result);
+            self.communicator.fireListeners(name, {
+                "action":"insert",
+                "query":query,
+                "options":options
+            });
         });
         return deferred.promise;
     }
+    self.communicator = _communicator;
     return self;
 }
 exports.setup = function (connection) {
