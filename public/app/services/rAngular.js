@@ -5,7 +5,16 @@
  * Time: 13:40
  * To change this template use File | Settings | File Templates.
  */
-angular.module('rAngular', []).service("$rSocket", [function ($rootScope) {
+angular.module('rAngular', []).service("$rSocketId", [function () {
+    var self = this;
+    self.generateToken = function () {
+        var text = "";
+        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        for (var i = 0; i < 12; i++)
+            text += possible.charAt(Math.floor(Math.random() * possible.length));
+        return text;
+    }
+}]).service("$rSocket", ['$rootScope', function ($rootScope) {
     var self = this;
     self.callbackPool = {};
     self.socketsPool = {};
@@ -22,8 +31,28 @@ angular.module('rAngular', []).service("$rSocket", [function ($rootScope) {
             self.socketsPool[collection] = socket;
         }
     }
+    self.get = function (collection) {
+        return self.socketsPool[collection];
+    }
     return self;
-}]).factory("Endpoint", ['$http', '$q', '$rootScope', '$rSocket', function ($http, $q, $rootScope, $rSocket) {
+}]).factory("$rObject", ["$rSocket",
+    function ($rSocket) {
+        function ObjectFactory(collection, objectvalue) {
+            if (!objectvalue) {
+                return;
+            }
+            objectvalue.$save = function () {
+                $rSocket.get(collection).emit("update", Math.random(), {_id:objectvalue._id}, objectvalue);
+            }
+            objectvalue.$remove = function () {
+
+                $rSocket.get(collection).emit("remove", Math.random(), {_id:objectvalue._id});
+            }
+            return objectvalue;
+        }
+
+        return ObjectFactory;
+    }]).factory("Endpoint", ['$http', '$q', '$rootScope', '$rSocket', '$rObject', function ($http, $q, $rootScope, $rSocket, $rObject) {
     var EndpointFactory = function (collection, realtime) {
         var value;
         var globalquery;
@@ -33,19 +62,23 @@ angular.module('rAngular', []).service("$rSocket", [function ($rootScope) {
                     switch (data.action) {
                         case "insert":
                             if (globalquery && (_.findWhere([data.query], globalquery) || _.keys(globalquery).length == "0")) {
-                                value[data.query._id] = data.query;
+                                value[data.query._id] = new $rObject(collection, data.query);
                             }
                             break;
                         case "update":
-                            for (var i in data.options.$set) {
-                                value[data.query._id][i] = data.options.$set[i];
+                            if (value[data.query._id]) {
+                                for (var i in data.options.$set) {
+                                    value[data.query._id][i] = data.options.$set[i];
+                                }
+                                if (!(_.findWhere([value[data.query._id]], globalquery) || _.keys(globalquery).length == "0")) {
+                                    delete value[data.query._id];
+                                }
                             }
                             break;
                         case "remove":
                             delete value[data.query._id];
                             break;
                     }
-                    console.log(globalquery);
                 });
             });
         }
@@ -71,13 +104,15 @@ angular.module('rAngular', []).service("$rSocket", [function ($rootScope) {
             url = query ? url + querystring : url;
             $http.get(url).success(function (result) {
                     angular.forEach(result, function (item) {
-                        value[item._id] = item;
+                        value[item._id] = new $rObject(collection, item);
                     });
                 }
             );
             return value;
         }
-
+        EndPoint.insert = function (query) {
+            $rSocket.get(collection).emit("insert", Math.random(), query);
+        }
         return EndPoint;
     }
     return EndpointFactory

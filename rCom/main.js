@@ -14,7 +14,7 @@ exports.registerListener = function (name, callback) {
     }
 
     listeners[name].push(callback);
-    console.log("Listener has been pushed", listeners);
+
 }
 exports.fireListeners = function (name, data) {
     console.log(listeners);

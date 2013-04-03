@@ -1,19 +1,20 @@
 var utils = require("./utils.js");
 exports.factory = function (express, db, collection, options) {
+    var self = this;
     var _collection = collection;
-    var _db = db.createCollection(_collection);
+    var _db = new db.createCollection(_collection);
     var socketserver = options.socketserver;
 
-    if (options.unique) {
-        _collection = options.unique;
-    }
+
     express.get("/api/" + _collection, function (req, res) {
         var _queryVariables = req.query;
         if (_queryVariables && _queryVariables.length != 0) {
+
             _db.find(_queryVariables, {}).then(function (result) {
                 res.json(200, result);
             });
         } else {
+
             _db.find({}, req.options.fields).then(function (result) {
                 res.json(200, result);
             });
@@ -41,7 +42,6 @@ exports.factory = function (express, db, collection, options) {
                 var query = route.query;
                 var queryType = route.queryType;
                 var options = route.options;
-
                 _db[queryType](query, options).then(function (result) {
                     res.json(200, result);
                 })

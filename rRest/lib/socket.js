@@ -20,17 +20,21 @@ exports.factory = function (express, sockets, db, collection, options) {
                     socket.emit(id, result);
                 });
             });
-            socket.on('update', function (id, _uniqueId, values) {
-                _db.update({_id:_uniqueId}, {$set:utils.cleanObject(values)}).then(function (result) {
+            socket.on('update', function (id, query, values) {
+                _db.update(query, {$set:utils.cleanObject(values)}).then(function (result) {
                     socket.emit(id, result);
                 });
             });
-            socket.on('delete', function (id, _uniqueId) {
-                _db.remove({_id:_uniqueId}).then(function (result) {
+            socket.on('remove', function (id, query) {
+                _db.remove(query).then(function (result) {
                     socket.emit(id, result);
                 });
             });
-
+            socket.on('insert', function (id, query) {
+                _db.insert(query).then(function (result) {
+                    socket.emit(id, result);
+                });
+            });
             _db.communicator.registerListener(_collection, function (name, obj) {
                 socket.emit(name, _collection, obj);
             });

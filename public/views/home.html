@@ -1,8 +1,64 @@
-<div>
+<div class="row">
+    <div class="span6">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Username</th>
+                <th>Actions <span class="fui-plus-24" ng-click="newUser = {};"></span></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="user in users">
+                <td>{{user.name}}</td>
+                <td>
+                    <span class="fui-cross-24" ng-click="user.$remove();"></span>
+                    <span class="fui-new-24" ng-click="setSelectedUser(user);"></span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="span6">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Dancer</th>
+                <th>Actions <span class="fui-plus-24" ng-click="newUser = {};"></span></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="user in dancers">
+                <td>{{user.name}}</td>
+                <td>
+                    <span class="fui-cross-24" ng-click="user.$remove();"></span>
+                    <span class="fui-new-24" ng-click="setSelectedUser(user);"></span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="span6" ng-show="selectedUser">
+        <form class="form form-vertical">
+            <div class="control-group">
+                <label class="control-label">Name</label>
 
-    <h2>All</h2>
+                <div class="controls">
+                    <input type="text" ng-model="selectedUser.name"/>
+                </div>
+            </div>
+            <button class="btn btn-primary" ng-click="selectedUser.$save();selectedUser = undefined;">Save</button>
+        </form>
+    </div>
+    <div class="span6" ng-show="newUser">
+        <form class="form form-vertical">
+            <div class="control-group">
+                <label class="control-label">Name</label>
 
-    <p ng-repeat="user in users">
-        {{user}}
-    </p>
+                <div class="controls">
+                    <input type="text" ng-model="newUser.name"/>
+                </div>
+            </div>
+            <button class="btn btn-primary" ng-click="addNewUser(newUser);newUser=undefined;">Add</button>
+        </form>
+    </div>
 </div>

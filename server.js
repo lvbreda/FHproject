@@ -17,4 +17,6 @@ db.init({
 db = db.createDB();
 
 
+var dancers = rest.factory(db, "Dancers", true, {});
 var users = rest.factory(db, "Users", true, {});
+
