@@ -18,9 +18,13 @@ exports.registerListener = function (name, callback) {
 }
 exports.fireListeners = function (name, data) {
     console.log(listeners);
-    async.each(listeners[name], function (_listener, callback) {
-        _listener(name, data);
-    }, function (err) {
-        console.log("Listener error", err);
-    });
+    if(listeners[name]){
+        async.each(listeners[name], function (_listener, callback) {
+            _listener(name, data);
+        }, function (err) {
+            console.log("Listener error", err);
+        });
+    }
+
 }
+

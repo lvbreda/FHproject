@@ -83,15 +83,41 @@ var CollectionFactory = function (name) {
 
 }
 exports.setup = function (connection) {
-    db = mongo.db(connection.uri, {w:1});
+    db = mongo.db(connection.uri + "/" + connection.dbname, {w:1});
 }
-exports.setReactive = function (reactive, callback) {
+exports.setReactive = function (reactive, connection) {
     if (reactive) {
-        oplog = db.collection("oplog.$main");
-        var cursor = oplog.find({"ns":{$not:""}}, {tailable:true, awaitData:true});
+        var oplogdb = mongo.db(connection.uri + "/local", {w:1});
+        oplog = oplogdb.collection("oplog.rs");
+        var cursor = oplog.find({}, {tailable:true, awaitData:true});
         cursor.each(function (err, log) {
+
             if (err) console.log("Reactive Error", err);
-            if (!err) console.log("Oplog", log);
+            if (!err){
+                switch(log.op){
+                    case "i":
+                        _communicator.fireListeners(log.ns.split(".")[1], {
+                            "action":"insert",
+                            "query":log.o,
+                            "options":log.o
+                        });
+                        break;
+                    case "u":
+                        _communicator.fireListeners(log.ns.split(".")[1], {
+                            "action":"update",
+                            "query":log.o2,
+                            "options":log.o
+                        });
+                        break;
+                    case "d":
+                        _communicator.fireListeners(log.ns.split(".")[1], {
+                            "action":"remove",
+                            "query":log.o,
+                            "options":log.o
+                        });
+                        break;
+                }
+            }
         });
     }
 }

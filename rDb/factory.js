@@ -25,7 +25,7 @@ exports.createDB = function (connection) {
     db.setup(_connection.details);
 
     if (_connection.reactive) {
-        db.setReactive(_connection.reactive, _callback);
+        db.setReactive(_connection.reactive, _connection.details);
     }
     return db;
 }

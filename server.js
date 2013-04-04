@@ -11,8 +11,10 @@ var rest = require('./rRest/factory.js');
 db.init({
     type:"mongodb",
     details:{
-        uri:"localhost:27017/testdb"
-    }
+        uri:"192.168.242.132:27017",
+        dbname : "testdb"
+    },
+    reactive : true
 });
 db = db.createDB();
 
