@@ -8,10 +8,11 @@
 var mongo = require('mongoskin');
 var counter = 0;
 var db = mongo.db("192.168.242.132:27017" + "/" + "testdb", {w:1});
+
 var fi = function(){
-    db.collection("Users").insert({
-        "name" : "bomen"+ counter
-    },{}, function (err, result) {
+    db.collection("Items").update({
+     random : {$gte : Math.random()}
+    },{$inc:{value:1}}, function (err, result) {
 
     });
     counter += 1;

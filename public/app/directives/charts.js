@@ -1,51 +1,38 @@
-/**
- * Created with JetBrains WebStorm.
- * User: landervanbreda
- * Date: 04/04/13
- * Time: 11:55
- * To change this template use File | Settings | File Templates.
- */
-angular.module('d3Charts', []).directive('d3pie',function(){
-    /**mmm pie**/
- return{
-     restrict : 'A',
-     scope:{
-         data: "=data",
-         attribute: "=attribute",
-         label : "=label"
-     },
-     link : function(scope,element,attrs){
+angular.module('AwesomeChartJS', []).directive('awesomechart', function () {
+        return {
+            restrict:'E',
+            replace:true,
+            template:'<canvas>Your web-browser does not support the HTML 5 canvas element.</canvas>',
+            link:function (scope, element, attrs) {
 
-          self.label = scope.label;
-          self.attribute = scope.attribute;
-          self.data = [];
+                //TODO: it is not cool that AwesomeChart can work with ids only :-( consider sending a pull request for this / or just fork since it is also messing with Array''s prototype
+                //TODO: other pb with the lib is that is messing up with the Array.prototype and is in global scope
+                var chart = new AwesomeChart(attrs.id);
+                chart.chartType = attrs.type || 'default';
+                chart.title = attrs.title;
 
-         scope.$watch("data",function(){
-             nv.addGraph(function() {
-                 var width = 500,
-                     height = 500;
+                var redraw = function (newScopeData) {
 
-                 var chart = nv.models.pieChart()
-                     .x(function(d) { return d[self.label] })
-                     .y(function(d) { return d[self.attribute] })
-                     //.showLabels(false)
-                     .values(function(d) { return d })
-                     .color(d3.scale.category10().range())
-                     .width(width)
-                     .height(height);
+                    //clear it up first: not the nicest method (should be a call on AwesomeChart) but no other choice here...
+                    chart.ctx.clearRect(0, 0, chart.width, chart.height);
 
-                 d3.select(attrs.id)
-                     .datum([scope.data])
-                     .transition().duration(1200)
-                     .attr('width', width)
-                     .attr('height', height)
-                     .call(chart);
+                    var i, data = [], labels = [], colors = [];
+                    //TODO: this logic should be moved to the library itself
+                    for(var i in newScopeData){
+                        data.push(newScopeData[i].value);
+                        labels.push(newScopeData[i].label);
+                        colors.push(newScopeData[i].color);
+                    }
 
-                 chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
 
-                 return chart;
-             });
-         });
-     }
- }
-})
+                    chart.data = data;
+                    chart.labels = labels;
+                    chart.colors = colors;
+                    chart.draw();
+                };
+
+                scope.$watch(attrs.data, redraw, true);
+            }
+        }
+    }
+);

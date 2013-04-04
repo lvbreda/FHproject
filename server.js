@@ -21,4 +21,5 @@ db = db.createDB();
 
 var dancers = rest.factory(db, "Dancers", true, {});
 var users = rest.factory(db, "Users", true, {});
+var items = rest.factory(db, "Items", true, {});
 

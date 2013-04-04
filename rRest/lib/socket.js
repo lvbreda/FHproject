@@ -10,6 +10,8 @@ exports.factory = function (express, sockets, db, collection, options) {
     }
     sockets.of('/' + _collection)
         .on('connection', function (socket) {
+            var hsData = socket.handshake;
+
             socket.on('get', function (id, query) {
                 _db.find(query, options.fields).then(function (result) {
                     socket.emit(id, result);
@@ -36,9 +38,10 @@ exports.factory = function (express, sockets, db, collection, options) {
                 });
             });
             _db.communicator.registerListener(_collection, function (name, obj) {
+                console.log(hsData.address);
                 socket.emit(name, _collection, obj);
             });
-            console.log(_db.communicator);
+            //console.log(_db.communicator);
         });
     self.addQuery = function (query) {
         self.queries.push(query);
