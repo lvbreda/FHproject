@@ -12,4 +12,30 @@ app.controller("HomeCtrl", ['$scope', '$http', 'Endpoint', function ($scope, $ht
     $scope.getLength = function(users){
         return _.keys(users).length;
     }
+
+    $scope.mapOptions = {
+        "onclick" : "maptooltip",
+
+    }
+
+
+
+
+
+
+
+    /**Tooltip**/
+    $scope.popupleft = 0;
+    $scope.popuptop = 0;
+    $scope.popupshow= false;
+    $scope.popupdescription = "";
+    $scope.maptooltip  = function(d,i,event){
+        $scope.$apply(function(){
+            $scope.popupshow = true;
+            $scope.popupleft = event.pageX-105;
+            $scope.popuptop = event.pageY-160;
+            $scope.popupdescription = d.description;
+        })
+
+    }
 }]);

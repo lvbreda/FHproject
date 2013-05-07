@@ -1,0 +1,167 @@
+
+/**$base: #34495e
+$firm: #1abc9c
+
+$gray: #95a5a6
+$lightgray: #ecf0f1
+$inverse: #fff
+
+$success: #2ecc71
+$danger: #e74c3c
+$warning: #f1c40f
+$info: #3498db**/
+
+body,html{
+    height:100%;
+    width: 100%;
+    overflow:hidden;
+}
+
+.sidenav{
+    height: 100%;
+    display:block;
+    background-color : #34495e;
+    width:15%;
+    float : left;
+    color:  white;
+}
+.sidenav.hidden{
+    width:60px;
+
+}
+.sidenav.hidden .menu-text{display:none;}
+.sidenav ul li,.sidenav ul{
+    padding: 0px;
+    margin: 0 0 0px 0px;
+}
+.sidenav ul li{
+   list-style-type : none;
+   display:block;
+   padding-top : 20px;
+   padding-bottom : 20px;
+   font: 16px "Lato", sans-serif;
+}
+.sidenav ul li{
+    padding-left : 20px;
+    border-bottom: 3px solid #333333;
+    cursor:pointer;
+}
+
+.sidenav ul li span,.sidenav ul li i{
+    margin-right : 20px;
+}
+.sidenav ul li:hover{
+    color: #1abc9c;
+
+}
+.sidenav ul li.active{
+    background-color : #333333;
+    color: #1abc9c;
+}
+.container-lander{
+    width:95%;
+    height:100%;
+    float : left;
+}
+
+.widget{
+    width: 47%;
+    height: 46%;
+    border: 1px solid #95A5A6;
+    border-radius: 5px;
+    margin: 1%;
+    float : left;
+}
+.widget-2x{
+    width: 96%;
+    height: 48%;
+    border: 1px solid #95A5A6;
+    border-radius: 5px;
+    margin: 1%;
+    float : left;
+}
+.widget-header{
+    color:  white;
+    background-color : #34495E;
+    margin-top : 0px;
+}
+.widget-header:hover{
+    color: #1abc9c;
+}
+.widget-header h3{
+    margin:  0px;
+    margin-left: 15px;
+    width: 85%;
+    float : left;
+}
+.widget-drop {
+    position: relative;
+    left:0px;
+    top: 0px;
+    rigth: Opx;
+    float : right;
+    width: 45px;
+    height: 40px;
+    border-radius: 0px;
+    border-top-right-radius: 4px;
+}
+.charts{
+    width: 100%;
+    height: 100%;
+    margin-left:80px;
+    margin-top : 20px;
+    margin-right :auto;
+}
+.map{
+    width:636px;
+    height:400px;
+
+    margin-top : 20px;
+}
+.player-icons{
+    color:  white;
+
+}
+.widget-content{
+    height: 96%;
+}
+.select-icon .share{
+    display:none;
+    z-index:-99;
+}
+.select-icon:hover .share{
+    display:block;
+}
+
+.datatable{
+    min-width: 100%;
+}
+.datatable td,.datatable th{
+    text-align: center;
+}
+
+.datatable thead{
+    background-color : #1ABC9C;
+    color: white;
+}
+.datatable .expand{
+    cursor : pointer;
+}
+.treelink{
+    stroke: #ECF0F1;
+    stroke-width: 1.5px;
+    color: transparent;
+    fill : none;
+}
+.link{
+    stroke: #9ecae1;
+    stroke-width: 1.5px;
+}
+.node{
+    opacity : 0.5;
+    transition: opacity 1s;
+}
+.node:hover{
+    transition: opacity 1s;
+    opacity : 1;
+}

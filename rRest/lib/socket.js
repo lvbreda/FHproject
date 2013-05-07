@@ -4,7 +4,7 @@ exports.factory = function (express, sockets, db, collection, options) {
     var _collection = collection;
     var _db = db.createCollection(_collection);
     var self = this;
-    self.queries = [];
+    var pubQueries = options.queries
     if (options.unique) {
         _collection = options.unique;
     }
@@ -37,14 +37,18 @@ exports.factory = function (express, sockets, db, collection, options) {
                     socket.emit(id, result);
                 });
             });
+        //console.log(hsData.sessionID);
             _db.communicator.registerListener(_collection, function (name, obj) {
-                console.log(hsData.address);
-                socket.emit(name, _collection, obj);
+                pubQueries.isInQuery(hsData.sessionID,obj).then(function(res){
+                  //  console.log(res);
+                    if(res == true){
+                      socket.emit(name, _collection, obj);
+                    }
+                });
+
             });
-            //console.log(_db.communicator);
         });
     self.addQuery = function (query) {
         self.queries.push(query);
     }
-
 }

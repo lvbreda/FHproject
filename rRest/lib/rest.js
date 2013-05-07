@@ -1,15 +1,15 @@
 var utils = require("./utils.js");
-exports.factory = function (express, db, collection, options) {
+exports.factory = function (express, db, collection, options,queries) {
     var self = this;
     var _collection = collection;
     var _db = new db.createCollection(_collection);
     var socketserver = options.socketserver;
-
+    var pubQueries = queries;
 
     express.get("/api/" + _collection, function (req, res) {
         var _queryVariables = req.query;
         if (_queryVariables && _queryVariables.length != 0) {
-
+            pubQueries.addToQuery(req.cookies['express.sid'],_queryVariables);
             _db.find(_queryVariables, {}).then(function (result) {
                 res.json(200, result);
             });
@@ -32,7 +32,7 @@ exports.factory = function (express, db, collection, options) {
         ;
     });
     express.delete("/api/" + _collection + "/:id", function (req, res) {
-        _db.remove({_id:req.params.id}).then(function (result) {
+        _db.remove({id:req.params.id}).then(function (result) {
             res.json(200, result);
         });
     });

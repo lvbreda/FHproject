@@ -17,7 +17,7 @@ exports.registerListener = function (name, callback) {
 
 }
 exports.fireListeners = function (name, data) {
-    console.log(listeners);
+    //console.log(listeners);
     if(listeners[name]){
         async.each(listeners[name], function (_listener, callback) {
             _listener(name, data);

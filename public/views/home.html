@@ -1,50 +1,70 @@
-<div class="row">
-
-    <div class="span6">
-        <awesomechart type="pie" id='chart1' width="400" height="400" data="items"></awesomechart>
-        <awesomechart type="bar" id='chart2' width="400" height="400" data="items"></awesomechart>
+<!--<div class="widget">
+    <div class="widget-header">
+        <h3>Pie chart</h3>
+        <span class="select-icon widget-drop"></span>
+        <div style="clear:both;"></div>
     </div>
-    <div class="span6">
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th>Dancer</th>
-                <th>Actions <span class="fui-plus-24" ng-click="newUser = {};"></span></th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr ng-repeat="user in dancers">
-                <td>{{user.name}}</td>
-                <td>
-                    <span class="fui-cross-24" ng-click="user.$remove();"></span>
-                    <span class="fui-new-24" ng-click="setSelectedUser(user);"></span>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="span6" ng-show="selectedUser">
-        <form class="form form-vertical">
-            <div class="control-group">
-                <label class="control-label">Name</label>
+    <div class="widget-content">
+        <div d3pie data="items" id="pies" >
 
-                <div class="controls">
-                    <input type="text" ng-model="selectedUser.name"/>
-                </div>
+        </div>
+
+    </div>
+</div>
+<div class="widget">
+    <div class="widget-header">
+        <h3>Map</h3>
+        <span class="select-icon widget-drop" style="position:relative;">
+            <div class="share mrl" style="width:150px; position:absolute;left:-90px;top:50px;padding:10px;">
+                <ul>
+                    <li>Bar</li>
+                    <li>Line</li>
+                    <li>Pie</li>
+                    <li>Guage</li>
+                </ul>
             </div>
-            <button class="btn btn-primary" ng-click="selectedUser.$save();selectedUser = undefined;">Save</button>
-        </form>
+        </span>
+        <div style="clear:both;"></div>
     </div>
-    <div class="span6" ng-show="newUser">
-        <form class="form form-vertical">
-            <div class="control-group">
-                <label class="control-label">Name</label>
+    <div class="widget-content">
+           <span ng-repeat="item in items"  data="item" id="lander" gauge></span>
+    </div>
+</div>-->
+<!--<div class="widget-2x" style="height:98%;">
+    <div class="widget-header">
+        <h3>Bar Chart</h3>
+        <span class="select-icon widget-drop"></span>
+        <div style="clear:both;"></div>
+    </div>
+    <div class="widget-content">
+        <div id="map" data="items" map options="mapOptions"></div>
+    </div>
+</div>-->
+<!--<div class="widget-2x" style="height:98%;">
+    <div class="widget-header">
+        <h3>Multiline Chart</h3>
+        <span class="select-icon widget-drop"></span>
+        <div style="clear:both;"></div>
+    </div>
+    <div class="widget-content">
+        <div id="multiline" data="items" multiline options="mapOptions"></div>
+    </div>
+</div>-->
+<div class="widget-2x" style="height:98%;">
+    <div class="widget-header">
+        <h3>Traffic lights Chart</h3>
+        <span class="select-icon widget-drop"></span>
+        <div style="clear:both;"></div>
+    </div>
+    <div class="widget-content">
+        <div ng-repeat="item in items" id="traffic" data="item" traffic style="width : 100px;height:200px;background-color:#34495e;float:left;margin:10px;">
 
-                <div class="controls">
-                    <input type="text" ng-model="newUser.name"/>
-                </div>
-            </div>
-            <button class="btn btn-primary" ng-click="addNewUser(newUser);newUser=undefined;">Add</button>
-        </form>
+        </div>
+
     </div>
+</div>
+
+<div class="tooltip fade top in" style="display: none;left:{{popupleft}}px;top:{{popuptop}}px;" ng-show="popupshow">
+    <div class="tooltip-arrow" style=""></div>
+    <div class="tooltip-inner">{{popupdescription}}</div>
 </div>

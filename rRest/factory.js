@@ -1,6 +1,7 @@
 var express = require('express');
 var cookie = require('cookie');
 var connect = require('connect');
+var pubQueries = require('../rMiddleware/pubQuery.js')
 var app = express();
 var restFactory = require("./lib/rest.js");
 var socketFactory = require("./lib/socket.js");
@@ -30,9 +31,9 @@ io.set('authorization', function (data, accept) {
         data.sessionID = data.cookie['express.sid'];
         sessionStore.get(data.sessionID, function(err, session){
             if (err) {
-                return accept('Error in session store.', false);
+               // return accept('Error in session store.', false);
             } else if (!session) {
-                return accept('Session not found.', false);
+               // return accept('Session not found.', false);
             }
             // success! we're authenticated with a known session.
             data.session = session;
@@ -41,7 +42,7 @@ io.set('authorization', function (data, accept) {
     } else {
         // if there isn't, turn down the connection with a message
         // and leave the function.
-        return accept('No cookie transmitted.', false);
+        //return accept('No cookie transmitted.', false);
     }
     // accept the incoming connection
     accept(null, true);
@@ -49,13 +50,14 @@ io.set('authorization', function (data, accept) {
 exports.factory = function (db, collection, realtime, options) {
     var socketserver;
     options = options || {};
+    options.queries = pubQueries;
     if (realtime) {
         socketserver = socketFactory.factory(app, io, db, collection, options);
         socketServers.push(socketFactory.factory(app, io, db, collection, options));
         options.socketserver = socketserver;
     }
 
-    var restserver = restFactory.factory(app, db, collection, options);
+    var restserver = restFactory.factory(app, db, collection, options,pubQueries);
     restServers.push(restserver);
 }
 exports.app = app;

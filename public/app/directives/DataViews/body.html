@@ -1,0 +1,6 @@
+
+    <tr ng-repeat="(key,row) in rows" >
+        <td ng-repeat="value in row" ng-click="onclick($event);" ng-bind-html-unsafe="value" id="{{key}}">
+
+        </td>
+    </tr>

@@ -5,6 +5,8 @@
  reactive: true/false,
  details : {}/""
  }
+ Creation of an interface to interact with the database. Database independent way.
+ Also reactivity will be activitated with this factory. Returns singleton.
  */
 var _connection;
 var _callback = function (name, result) {

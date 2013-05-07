@@ -1,0 +1,32 @@
+#multiline svg {
+    font: 10px sans-serif;
+}
+
+#multiline .line, #multiline .domain {
+    fill:  none;
+    stroke: #000;
+    stroke-width: 1.5px;
+}
+#multiline .area{
+
+}
+#multiline .axis path, .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+#line svg {
+    font: 10px sans-serif;
+}
+
+#line .line {
+    fill: none;
+    stroke: #000;
+    stroke-width: 1.5px;
+}
+
+#line .axis path, .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}

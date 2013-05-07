@@ -1,0 +1,46 @@
+.overlay {
+    fill: none;
+    pointer-events: all;
+    display:none;
+}
+
+.land {
+    fill: #ECF0F1;
+}
+.land:hover {
+    fill: #F39C12;
+}
+.boundary {
+    fill: none;
+    stroke: #95A5A6;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+.location{
+    fill : #E74C3C;
+}
+.package{
+    fill : #E74C3C;
+}
+#map {
+    font: 2px sans-serif;
+}
+.arc{
+    fill :  none;
+    stroke: #34495E;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+.animation{
+    fill : none;
+    stroke:  #E74C3C;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+.flyingpackage{
+    fill : #2C3E50;
+}
+image{
+    max-width:2Opx;
+    max-height:10px;
+}
