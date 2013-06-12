@@ -25,6 +25,5 @@ exports.fireListeners = function (name, data) {
             console.log("Listener error", err);
         });
     }
-
 }
 

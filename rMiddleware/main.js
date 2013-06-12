@@ -5,6 +5,14 @@
  * Time: 21:03
  * To change this template use File | Settings | File Templates.
  */
+/*
+  Middleware:
+  PreHooks  : On requests
+  PostHooks : On responses
+
+  Async is used to send these sometimes long during middleware tasks in the event loop with still sync up after to
+  respond only after all tasks have been ran.
+ */
 var async = require("async");
 var preHooks = [];
 var postHooks = [];

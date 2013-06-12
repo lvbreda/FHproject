@@ -11,19 +11,13 @@ var rest = require('./rRest/factory.js');
 db.init({
     type:"mongodb",
     details:{
-        uri:"192.168.242.132:27017",
-        dbname : "testdb"
+        uri:"127.0.0.1:27017",
+        dbname : "cais_0"
     },
     reactive : true
 });
 db = db.createDB();
 
 
-var dancers = rest.factory(db, "Dancers", true, {});
-var users = rest.factory(db, "Users", true, {});
-var items = rest.factory(db, "Items", true, {});
-
-
-
-var testers = rest.factory(db, "Tester", true, {});
+var dancers = rest.factory(db, "agent", true, {});
 

@@ -23,10 +23,12 @@ var CollectionFactory = function (name) {
         self.name = name;
         self.communicator = communicator;
         self.find = function (query, options) {
+            console.log("Query incoming",query);
             var deferred = q.defer();
             if (query._id) query._id = new BSON.ObjectID(query._id);
             console.log("Find", self.name);
-            db.collection(self.name).find(query, options).toArray(function (err, result) {
+            db.collection(self.name).find(query,{}).toArray(function (err, result) {
+                console.log("Result",result.length);
                 if (err) console.log("Error", err);
                 deferred.resolve(result);
             });
@@ -94,10 +96,9 @@ exports.setup = function (connection) {
 exports.setReactive = function (reactive, connection) {
     if (reactive) {
         var oplogdb = mongo.db(connection.uri + "/local", {w:1});
-        oplog = oplogdb.collection("oplog.rs");
+        oplog = oplogdb.collection("oplog.$main");
         var cursor = oplog.find({}, {tailable:true, awaitData:true});
         cursor.each(function (err, log) {
-
             if (err) console.log("Reactive Error", err);
             if (!err){
                 switch(log.op){

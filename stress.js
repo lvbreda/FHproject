@@ -19,7 +19,7 @@ var fi = function(){
         ,function(err,result){ console.log(err);});
     counter += 1;
     if(counter<5000){
-        setTimeout(fi,300);
+        setTimeout(fi,2000);
     }
 }
-setTimeout(fi,200);
+setTimeout(fi,2000);

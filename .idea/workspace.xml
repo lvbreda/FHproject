@@ -2,201 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7394679-6ce0-43e7-a350-629bbcb64a3c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/fontawesome/font/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/fontawesome/font/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/fontawesome/font/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/fontawesome/font/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/dist/images/layers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/dist/images/marker-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/dist/images/marker-icon@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/dist/images/marker-shadow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/controllers/data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/directives/DataViews/cell.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/directives/DataViews/footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/directives/DataViews/header.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/directives/DataViews/pagination.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/directives/DataViews/row.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/directives/DataViews/search.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/directives/d3/barchart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/directives/datatable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/directives/leaflet.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/angularui/routing.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/charts/css/line.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/charts/gauge.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/fontawesome/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/fontawesome/font/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/Jakefile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/build/build.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/build/build.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/build/deps.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/build/hintrc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/component.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/css/mobile.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/css/screen.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/hacks/jitter.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/leaflet-include.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/map/canvas.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/map/controls.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/map/geolocation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/map/image-overlay.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/map/map-mobile.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/map/map.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/map/max-bounds.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/map/scroll.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/map/simple-proj.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/map/wms-marble.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/map/wms.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/map/zoomlevels.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/tests/add_remove_layers.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/tests/bringtoback.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/tests/click_on_canvas.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/tests/click_on_canvas_broken.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/tests/opacity.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/tests/removetilewhilepan.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/vector/bounds-extend.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/vector/editable.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/vector/feature-group-bounds.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/vector/geojson-sample.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/vector/geojson.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/vector/rectangle.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/vector/route.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/vector/touchzoomemu.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/vector/us-states.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/vector/vector-bounds.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/vector/vector-canvas.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/vector/vector-mobile.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/vector/vector-simple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/debug/vector/vector.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/dist/leaflet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/dist/leaflet.ie.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/spec/happen.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/spec/jasmine/MIT.LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/spec/jasmine/jasmine-html.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/spec/jasmine/jasmine.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/spec/jasmine/jasmine.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/spec/runner.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/spec/suites/LeafletSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/spec/suites/SpecHelper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/spec/suites/control/Control.LayersSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/spec/suites/control/Control.ScaleSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/spec/suites/core/ClassSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/spec/suites/core/EventsSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/spec/suites/core/UtilSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/spec/suites/dom/DomEventSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/spec/suites/dom/DomUtilSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/spec/suites/geo/LatLngBoundsSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/spec/suites/geo/LatLngSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/spec/suites/geo/ProjectionSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/spec/suites/geometry/BoundsSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/spec/suites/geometry/PointSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/spec/suites/geometry/TransformationSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/spec/suites/layer/TileLayerSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/spec/suites/layer/vector/CircleSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/spec/suites/layer/vector/PolylineGeometrySpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/spec/suites/map/MapSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/Leaflet.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/control/Control.Attribution.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/control/Control.Layers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/control/Control.Scale.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/control/Control.Zoom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/control/Control.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/copyright.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/core/Browser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/core/Class.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/core/Events.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/core/Handler.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/core/Util.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/dom/DomEvent.DoubleTap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/dom/DomEvent.MsTouch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/dom/DomEvent.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/dom/DomUtil.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/dom/Draggable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/dom/PosAnimation.Timer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/dom/PosAnimation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/geo/LatLng.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/geo/LatLngBounds.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/geo/crs/CRS.EPSG3395.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/geo/crs/CRS.EPSG3857.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/geo/crs/CRS.EPSG4326.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/geo/crs/CRS.Simple.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/geo/crs/CRS.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/geo/projection/Projection.LonLat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/geo/projection/Projection.Mercator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/geo/projection/Projection.SphericalMercator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/geo/projection/Projection.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/geometry/Bounds.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/geometry/LineUtil.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/geometry/Point.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/geometry/PolyUtil.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/geometry/Transformation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/images/marker.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/layer/FeatureGroup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/layer/GeoJSON.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/layer/ImageOverlay.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/layer/LayerGroup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/layer/Popup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/layer/marker/DivIcon.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/layer/marker/Icon.Default.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/layer/marker/Icon.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/layer/marker/Marker.Drag.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/layer/marker/Marker.Popup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/layer/marker/Marker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/layer/tile/TileLayer.Canvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/layer/tile/TileLayer.WMS.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/layer/tile/TileLayer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/layer/vector/Circle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/layer/vector/CircleMarker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/layer/vector/MultiPoly.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/layer/vector/Path.Popup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/layer/vector/Path.SVG.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/layer/vector/Path.VML.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/layer/vector/Path.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/layer/vector/Polygon.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/layer/vector/Polyline.Edit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/layer/vector/Polyline.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/layer/vector/Rectangle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/layer/vector/canvas/Circle.Canvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/layer/vector/canvas/Path.Canvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/layer/vector/canvas/Polygon.Canvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/layer/vector/canvas/Polyline.Canvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/map/Map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/map/anim/Map.PanAnimation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/map/anim/Map.ZoomAnimation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/map/ext/Map.Control.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/map/ext/Map.Geolocation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/map/ext/Map.Popup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/map/handler/Map.BoxZoom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/map/handler/Map.DoubleClickZoom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/map/handler/Map.Drag.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/map/handler/Map.Keyboard.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/map/handler/Map.ScrollWheelZoom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/leaflet/src/map/handler/Map.TouchZoom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/map/json/world-50m.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/vendors/map/map.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/views/partials/sidebar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rMiddleware/auth.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rMiddleware/lib/query.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rMiddleware/pubQuery.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/app.js" afterPath="$PROJECT_DIR$/public/app/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/controllers/home.js" afterPath="$PROJECT_DIR$/public/app/controllers/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/directives/charts.js" afterPath="$PROJECT_DIR$/public/app/directives/charts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendors/charts/d3.js" afterPath="$PROJECT_DIR$/public/vendors/charts/d3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendors/charts/nv.d3.min.js" afterPath="$PROJECT_DIR$/public/vendors/charts/nv.d3.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/services/rAngular.js" afterPath="$PROJECT_DIR$/public/app/services/rAngular.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/data.html" afterPath="$PROJECT_DIR$/public/views/data.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/home.html" afterPath="$PROJECT_DIR$/public/views/home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rCom/main.js" afterPath="$PROJECT_DIR$/rCom/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rDb/factory.js" afterPath="$PROJECT_DIR$/rDb/factory.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rDb/lib/mongodb.js" afterPath="$PROJECT_DIR$/rDb/lib/mongodb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rMiddleware/main.js" afterPath="$PROJECT_DIR$/rMiddleware/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rRest/factory.js" afterPath="$PROJECT_DIR$/rRest/factory.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rRest/lib/rest.js" afterPath="$PROJECT_DIR$/rRest/lib/rest.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rRest/lib/socket.js" afterPath="$PROJECT_DIR$/rRest/lib/socket.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rRest/lib/utils.js" afterPath="$PROJECT_DIR$/rRest/lib/utils.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stress.js" afterPath="$PROJECT_DIR$/stress.js" />
     </list>
@@ -218,17 +36,17 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pubQuery.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rMiddleware/pubQuery.js">
+      <file leaf-file-name="utils.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rRest/lib/utils.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="3" selection-start="2105" selection-end="2105" vertical-scroll-proportion="0.0">
+            <state line="21" column="1" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stress.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stress.js">
+      <file leaf-file-name="query.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rMiddleware/lib/query.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -236,10 +54,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="socket.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rRest/lib/socket.js">
+      <file leaf-file-name="auth.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rMiddleware/auth.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="20" selection-start="1740" selection-end="1740" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rMiddleware/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="1" selection-start="902" selection-end="902" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -248,7 +75,16 @@
       <file leaf-file-name="factory.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rDb/factory.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="74" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mysql.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rDb/lib/mysql.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -257,52 +93,36 @@
       <file leaf-file-name="mongodb.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rDb/lib/mongodb.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="125" column="17" selection-start="4597" selection-end="4597" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="auth.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rMiddleware/auth.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="166" selection-end="166" vertical-scroll-proportion="0.02265861">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/controllers/data.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="363" column="4" selection-start="12063" selection-end="12063" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/views/data.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="65" selection-end="65" vertical-scroll-proportion="-0.625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1208" column="40" selection-start="46791" selection-end="46791" vertical-scroll-proportion="-29.884615">
+            <state line="175" column="55" selection-start="6452" selection-end="6452" vertical-scroll-proportion="0.8770615">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server.js">
+      <file leaf-file-name="pubQuery.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rMiddleware/pubQuery.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="10" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0">
+            <state line="38" column="2" selection-start="1287" selection-end="1287" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="socket.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rRest/lib/socket.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="120" selection-start="1986" selection-end="1986" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -326,29 +146,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$USER_HOME$/youba/james/latestversion/index.html" />
-        <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/public/css/styles.css" />
-        <option value="$PROJECT_DIR$/rMiddleware/lib/query.js" />
-        <option value="$PROJECT_DIR$/public/app/app.js" />
-        <option value="$PROJECT_DIR$/rRest/factory.js" />
-        <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/rRest/lib/rest.js" />
-        <option value="$PROJECT_DIR$/rCom/main.js" />
-        <option value="$PROJECT_DIR$/public/app/controllers/data.js" />
-        <option value="$PROJECT_DIR$/public/views/data.html" />
-        <option value="$PROJECT_DIR$/rMiddleware/pubQuery.js" />
-        <option value="$PROJECT_DIR$/rRest/lib/socket.js" />
         <option value="$PROJECT_DIR$/rDb/factory.js" />
-        <option value="$PROJECT_DIR$/rDb/lib/mongodb.js" />
         <option value="$PROJECT_DIR$/rMiddleware/auth.js" />
+        <option value="$PROJECT_DIR$/rCom/main.js" />
+        <option value="$PROJECT_DIR$/stress.js" />
+        <option value="$PROJECT_DIR$/public/app/services/rAngular.js" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/rDb/lib/mongodb.js" />
+        <option value="$PROJECT_DIR$/public/views/data.html" />
+        <option value="$PROJECT_DIR$/public/views/home.html" />
+        <option value="$PROJECT_DIR$/public/app/controllers/home.js" />
+        <option value="$PROJECT_DIR$/rRest/factory.js" />
+        <option value="$PROJECT_DIR$/rRest/lib/rest.js" />
+        <option value="$PROJECT_DIR$/rRest/lib/socket.js" />
+        <option value="$PROJECT_DIR$/rRest/lib/utils.js" />
+        <option value="$PROJECT_DIR$/rMiddleware/main.js" />
+        <option value="$PROJECT_DIR$/public/app/app.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="832" />
+    <option name="height" value="837" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -376,6 +196,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -418,38 +239,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="rRest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FHproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FHproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rMiddleware" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FHproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FHproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="rDb" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -482,75 +271,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="rCom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FHproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FHproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FHproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FHproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FHproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FHproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FHproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FHproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -569,63 +290,18 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FHproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FHproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="directives" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FHproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FHproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="options.lastSelected" value="settings.github" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="/Library/WebServer/Documents" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.searchVisible" value="true" />
@@ -738,14 +414,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="832" extended-state="0" />
+    <frame x="0" y="22" width="1440" height="837" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18565401" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4225251" sideWeight="0.6005626" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.258967" sideWeight="0.6005626" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -819,112 +495,106 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/rMiddleware/main.js">
+    <entry file="file://$PROJECT_DIR$/public/views/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rMiddleware/lib/query.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="3" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/controllers/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="3" selection-start="99" selection-end="151" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rRest/factory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="29" selection-start="1209" selection-end="1232" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rRest/lib/rest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="59" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rCom/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="12" selection-start="623" selection-end="623" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1208" column="40" selection-start="46791" selection-end="46791" vertical-scroll-proportion="-29.884615">
-          <folding />
-        </state>
+        <state line="10" column="29" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/controllers/data.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="363" column="4" selection-start="12063" selection-end="12063" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="299" column="5" selection-start="10351" selection-end="10553" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/data.html">
+    <entry file="file://$PROJECT_DIR$/public/app/controllers/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="65" selection-end="65" vertical-scroll-proportion="-0.625">
-          <folding />
-        </state>
+        <state line="1" column="61" selection-start="100" selection-end="157" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stress.js">
+    <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="22" column="0" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rRest/factory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="0" selection-start="1357" selection-end="1357" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rRest/lib/rest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="0" selection-start="3242" selection-end="3242" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rRest/lib/socket.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="20" selection-start="1740" selection-end="1740" vertical-scroll-proportion="0.0">
+        <state line="49" column="120" selection-start="1986" selection-end="1986" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
+    <entry file="file://$PROJECT_DIR$/rRest/lib/utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="10" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0">
+        <state line="21" column="1" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rMiddleware/pubQuery.js">
+    <entry file="file://$PROJECT_DIR$/rMiddleware/lib/query.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="3" selection-start="2105" selection-end="2105" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rDb/factory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="74" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rDb/lib/mongodb.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rMiddleware/auth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="166" selection-end="166" vertical-scroll-proportion="0.02265861">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rMiddleware/pubQuery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="2" selection-start="1287" selection-end="1287" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rMiddleware/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="1" selection-start="902" selection-end="902" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rDb/factory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rDb/lib/mysql.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rDb/lib/mongodb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="125" column="17" selection-start="4597" selection-end="4597" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="175" column="55" selection-start="6452" selection-end="6452" vertical-scroll-proportion="0.8770615">
           <folding />
         </state>
       </provider>

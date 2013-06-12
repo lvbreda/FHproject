@@ -53,7 +53,8 @@ angular.module('rAngular', []).service("$rSocketId", [function () {
 
         return ObjectFactory;
     }]).factory("Endpoint", ['$http', '$q', '$rootScope', '$rSocket', '$rObject', function ($http, $q, $rootScope, $rSocket, $rObject) {
-    var EndpointFactory = function (collection, realtime) {
+    var EndpointFactory = function (collection, realtime,index) {
+        index = index || "_id";
         var value;
         var globalquery;
         if (realtime) {
@@ -62,21 +63,21 @@ angular.module('rAngular', []).service("$rSocketId", [function () {
                     switch (data.action) {
                         case "insert":
                             if (globalquery && (_.findWhere([data.query], globalquery) || _.keys(globalquery).length == "0")) {
-                                value[data.query._id] = new $rObject(collection, data.query);
+                                value[data.query[index]] = new $rObject(collection, data.query);
                             }
                             break;
                         case "update":
-                            if (value[data.query._id]) {
+                            if (value[data.query[index]]) {
                                 for (var i in data.options.$set) {
-                                    value[data.query._id][i] = data.options.$set[i];
+                                    value[data.query[index]][i] = data.options.$set[i];
                                 }
-                                if (!(_.findWhere([value[data.query._id]], globalquery) || _.keys(globalquery).length == "0")) {
-                                    delete value[data.query._id];
+                                if (!(_.findWhere([value[data.query[index]]], globalquery) || _.keys(globalquery).length == "0")) {
+                                    delete value[data.query[index]];
                                 }
                             }
                             break;
                         case "remove":
-                            delete value[data.query._id];
+                            delete value[data.query[index]];
                             break;
                     }
                 });
@@ -104,7 +105,7 @@ angular.module('rAngular', []).service("$rSocketId", [function () {
             url = query ? url + querystring : url;
             $http.get(url).success(function (result) {
                     angular.forEach(result, function (item) {
-                        value[item._id] = new $rObject(collection, item);
+                        value[item[index]] = new $rObject(collection, item);
                     });
                 }
             );

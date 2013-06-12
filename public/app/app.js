@@ -94,7 +94,9 @@ var app = angular.module('rLive', ['rAngular', 'AwesomeChartJS','Datatable']).
         return {
             restrict:'A',
             link:function (scope, element, attrs) {
+
                var data;
+              var color = d3.scale.category20();
                 var w = angular.element(element[0]).parent().width()-60;
                 var h = angular.element(element[0]).parent().height()-60;
 
@@ -131,12 +133,11 @@ var app = angular.module('rLive', ['rAngular', 'AwesomeChartJS','Datatable']).
                        .enter()
                        .append("rect")
                        .attr("x",function(d,i){
-
                            return i*(w/Object.size(data));
                        })
                        .attr("y",function(d,i){
 
-                           return yScale(h- d.value);
+                           return yScale(d.value);
                        })
                        .attr("width",function(){
                            return w/Object.size(data);
@@ -145,9 +146,9 @@ var app = angular.module('rLive', ['rAngular', 'AwesomeChartJS','Datatable']).
 
                            return yScale(h);
                        })
-                       .attr("fill",function(d){
+                       .attr("fill",function(d,i){
 
-                           return colorparse(d.color);
+                           return color(i);
                        });
                    first = false;
                }
@@ -171,7 +172,8 @@ var app = angular.module('rLive', ['rAngular', 'AwesomeChartJS','Datatable']).
                }
                scope.$watch(attrs.data,function(newdata){
 
-                   if(newdata && Object.size(newdata)>0){
+                   if(newdata && (Object.size(newdata)>0 || newdata.length >0)){
+                     console.log("Bar change",newdata);
                        setup(newdata);
                    }
 
@@ -958,7 +960,7 @@ var app = angular.module('rLive', ['rAngular', 'AwesomeChartJS','Datatable']).
         /**layout**/
         var margin = {top: 0, right: 0, bottom: 0, left: 0};
         var w = angular.element(element[0]).width();
-        var h = 800;
+        var h = 400;
         /**map options**/
         scope.options = {
           value : "value",
@@ -974,7 +976,7 @@ var app = angular.module('rLive', ['rAngular', 'AwesomeChartJS','Datatable']).
           .on("zoom", move);
         var svg = d3.select(element[0]).append("svg")
           .attr("width", w)
-          .attr("height", h)
+          .attr("height", h);
 
         var g = svg.append("g");
         g.call(zoom)
@@ -1145,12 +1147,15 @@ var app = angular.module('rLive', ['rAngular', 'AwesomeChartJS','Datatable']).
 
 // Toggle children.
         function toggle(d) {
+
           if (d.children) {
             d._children = d.children;
             d.children = null;
           } else {
+
             d.children = d._children;
             d._children = null;
+            scope.$emit("propertyselected",d);
           }
         }
 
@@ -1219,8 +1224,8 @@ var app = angular.module('rLive', ['rAngular', 'AwesomeChartJS','Datatable']).
           force
             .nodes(nodes)
             .links(links)
-            .charge(-200)
-            .linkDistance(60)
+            .charge(20)
+            .linkDistance(10)
             .start();
 
           // Update the links…
